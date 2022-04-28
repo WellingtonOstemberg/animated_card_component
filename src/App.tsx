@@ -1,25 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { AnimatedBorderCard } from './components';
 
 function App() {
+  const message = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sapiente dignissimos ipsa voluptates neque labore quae expedita perferendis dicta accusantium laborum similique, fuga soluta maxime eius tempora cumque tenetur? Voluptatum quasi illo vero, perspiciatis maxime distinctio iste nesciunt voluptatibus dolorum delectus odit obcaecati sed repellendus consectetur ratione omnis! Vel, eum?'
+  const title = 'Animated Border Card'
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AnimatedBorderCard message={message} title={title} path='/' />
   );
 }
 
